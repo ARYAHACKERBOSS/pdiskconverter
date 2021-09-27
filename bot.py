@@ -8,7 +8,7 @@ from pyrogram.handlers import MessageHandler
 API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
-API_KEY = environ.get('API_KEY', '3494ad69b7c32aa52e71adf0da498357')
+API_KEY = environ.get('API_KEY', '0d767c7463e2d2edb149a2d61813e210')
 
 bot = Client('pdiskshortner bot',
              api_id=API_ID,
@@ -22,7 +22,7 @@ bot = Client('pdiskshortner bot',
 async def start(bot, message):
     await message.reply(
         f"**Hi {message.chat.first_name}!**\n\n"
-        "I'm Pdisk link converter bot. Just send me link and get converted link of pdisk.\n\n Created By @steallootdeal")
+        "I'm Pdisk link converter bot. Just send me link and get converted link of pdisk.\n\n Created By Aryan[https://t.me/developer Aryan up]")
 
 @bot.on_message(filters.command('help') & filters.private)
 async def help(bot, message):
@@ -49,7 +49,7 @@ async def link_handler(bot, message):
 
 async def post_shortlink(Link):
     url = 'http://linkapi.net/open/create_item'
-    params = {'api_key': API_KEY, 'content_src': Link, 'link_type': 'link', 'cover_url' : '/steallootdeal.jpeg'}
+    params = {'api_key': API_KEY, 'content_src': Link, 'link_type': 'link', 'cover_url' : '0.jpeg'}
     async with aiohttp.ClientSession() as session:
         async with session.get(url, params=params, raise_for_status=True) as response:
             data = await response.json()
