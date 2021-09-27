@@ -5,8 +5,8 @@
         "telegram",
         "PdiskShortener"
     ],
-    "website": "https://github.com/kevinnadar264/pdiskshortner/",
-    "repository": "https://github.com/kevinnadar264/pdiskshortner/",
+    "website": "https://github.com/ARYAHACKERBOSS/pdiskconverter",
+    "repository": "https://github.com/ARYAHACKERBOSS/pdiskconverter",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token",
